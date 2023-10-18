@@ -65,4 +65,20 @@ Console.WriteLine(message);
 // var variables need to be initialized straight away, just declaring it will be met with an error. 
 
 
+//////////////// CHALLENGE: DISPLAY LITERAL AND VARIABLE VALUES ////////////////
 
+
+string fName = "Bob";
+int msgAmount =  3;
+decimal temperature = 34.4m;
+
+Console.WriteLine("Hello, " + fName + "! You have " + msgAmount + " messages in your inbox. The temperature is " + temperature + " celsius.");
+// Console.Write("Hello, ");
+// Console.Write(fName);
+// Console.Write("! You have ");
+// Console.Write(msgAmount);
+// Console.Write(" messages in your inbox. The temperature is ");
+// Console.Write(temperature);
+// Console.Write(" celsius.");
+
+// the above was the solution code, but these work similar to JS so I put them in one WriteLine
