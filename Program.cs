@@ -158,3 +158,20 @@ string greeting = "Hello";
 Console.WriteLine(greeting + " " + frName + "!");
 
 
+//////////////// STRING INTERPOLATION ////////////////
+
+
+string msg = $"{greeting} {frName}!";
+Console.WriteLine(msg);
+
+int version = 11;
+string updateTxt = "Update to Windows";
+Console.WriteLine($"{updateTxt} {version}!");
+
+
+//////////////// COMBINE VERBATIM LITERALS AND STRING INTERPOLATION ////////////////
+
+
+// verbatim literal (@) and string interpolation ($) combined
+string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data");
