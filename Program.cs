@@ -185,3 +185,120 @@ string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\
 
 Console.WriteLine("View English output:\n\t" + $@"c:\Exercises\{projName}\data.txt");
 Console.WriteLine($"{russianMessage}\n\t" + $@"c:\Exercises\{projName}\ru-Ru\data.txt");
+
+
+///////////////////////////////////////////////////
+//////////////// NUMBER OPERATIONS ////////////////
+///////////////////////////////////////////////////
+
+
+//////////////// ADD TWO NUMERIC VALUES ////////////////
+
+
+Console.WriteLine(" ");
+int firstNum = 12;
+int secondNum = 7;
+Console.WriteLine(firstNum + secondNum);
+
+
+//////////////// MIX DATATYPES TO FORCE IMPLICIT TYPE CONVERSION ////////////////
+
+// use previously declared firstName string variable
+int widgetsSold = 7;
+Console.WriteLine(firstName + " sold " + widgetsSold + " widgets.");
+// when adding more numbers, compiler will still treat everything as a string
+Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets.");
+// add parenthesis to make intentions more clear:
+Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets.");
+
+
+//////////////// BASIC MATH OPERATIONS ////////////////
+
+
+int sum = 7 + 5;
+int difference = 7 - 5;
+int product = 7 * 5;
+int quotient = 7 / 5;
+
+Console.WriteLine(" ");
+
+Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient); // results in 1, which we don't want
+
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine("Decimal quotient: " + decimalQuotient);
+
+int first = 7;
+int second = 5;
+decimal quot = (decimal)first / (decimal)second; // casting int to decimal
+Console.WriteLine(quot);
+
+
+//////////////// MODULUS FOR THE REMAINDER ////////////////
+
+
+Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
+
+
+//////////////// ORDER OF OPERATIONS ////////////////
+
+
+int val1 = 3 + 4 * 5;
+int val2 = (3 + 4) * 5;
+Console.WriteLine(val1);
+Console.WriteLine(val2);
+
+
+//////////////// INCREMENT AND DECREMENT ////////////////
+
+
+int val3 = 0;           // val3 is 0 
+val3 = val3 + 5;        // val3 is now 5
+val3 += 5;              // val3 is now 10
+
+int val4 = 0;           // val4 is 0
+val4 = val4 + 1;        //val4 is 1
+val4++;                 //val4 is now 2
+
+// compound assignment operators: += -= *= ++ --
+// they compound some operation in addition to assigning the result to the variable.
+
+int value = 1;
+
+value = value + 1;
+Console.WriteLine("First increment: " + value);
+
+value += 1;
+Console.WriteLine("Second increment: " + value);
+
+value++;
+Console.WriteLine("Third increment: " + value);
+
+value = value - 1;
+Console.WriteLine("First decrement: " + value);
+
+value -= 1;
+Console.WriteLine("Second decrement: " + value);
+
+value--;
+Console.WriteLine("Third decrement: " + value); // is now 1
+
+// Using the increment operator before and after the value (similar to JS)
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine($"Second: {value++}"); // only adds 1 on the next line
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value)); // adds one in this line
+
+
+//////////////// CHALLENGE ////////////////
+
+
+int fahrenheit = 94;
+// subtract 32, multiply by 5/9 from F to C
+
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine($"The temperature is {celsius} Celsius");
