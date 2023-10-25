@@ -69,7 +69,7 @@ Console.WriteLine(message);
 
 
 string fName = "Bob";
-int msgAmount =  3;
+int msgAmount = 3;
 decimal temperature = 34.4m;
 
 Console.WriteLine("Hello, " + fName + "! You have " + msgAmount + " messages in your inbox. The temperature is " + temperature + " celsius.");
@@ -345,10 +345,10 @@ Console.WriteLine(" ");
 Console.WriteLine(" GUIDED ASSIGNMENT ");
 Console.WriteLine(" ");
 
-decimal sophiaScore = (decimal) sophiaSum / currentAssignments;
-decimal nicolasScore = (decimal) nicolasSum / currentAssignments;
-decimal zahirahScore = (decimal) zahirahSum / currentAssignments;
-decimal jeongScore = (decimal) jeongSum / currentAssignments;
+decimal sophiaScore = (decimal)sophiaSum / currentAssignments;
+decimal nicolasScore = (decimal)nicolasSum / currentAssignments;
+decimal zahirahScore = (decimal)zahirahSum / currentAssignments;
+decimal jeongScore = (decimal)jeongSum / currentAssignments;
 
 Console.WriteLine("Student\t\tGrade\n");
 Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
@@ -396,11 +396,11 @@ totalGradePoints += course3Credit * course3Grade;
 totalGradePoints += course4Credit * course4Grade;
 totalGradePoints += course5Credit * course5Grade;
 
-decimal gradePointAverage = (decimal) totalGradePoints/totalCreditHours;
+decimal gradePointAverage = (decimal)totalGradePoints / totalCreditHours;
 
-int leadingDigit = (int) gradePointAverage;
-int firstDigit = (int) (gradePointAverage * 10) % 10;
-int secondDigit = (int) (gradePointAverage * 100) % 10;
+int leadingDigit = (int)gradePointAverage;
+int firstDigit = (int)(gradePointAverage * 10) % 10;
+int secondDigit = (int)(gradePointAverage * 100) % 10;
 
 Console.WriteLine($"Student: {studentName}\n");
 
